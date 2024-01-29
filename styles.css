@@ -1,0 +1,95 @@
+/* Default styles for desktop */
+/* Container styles */
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Profile styles for desktop */
+.profile-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center; /* Center profile horizontally */
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+/* Video background styles */
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#video-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Styles for mobile */
+@media only screen and (max-width: 768px) {
+    /* Profile styles */
+    .profile-container {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 60px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .profile img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 0 auto 20px auto; /* Center image horizontally and add margin at the bottom */
+    }
+
+    .profile-info {
+        text-align: center;
+    }
+}
+
+/* Other CSS rules */
+
+body {
+    overflow: hidden;
+}
