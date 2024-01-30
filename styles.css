@@ -1,5 +1,3 @@
-/* Default styles for desktop */
-/* Container styles */
 .container {
     max-width: 1200px;
     padding: 20px;
@@ -12,7 +10,6 @@
     height: 100vh;
 }
 
-/* Profile styles for desktop */
 .profile-container {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 60px;
@@ -21,47 +18,26 @@
     position: relative;
     z-index: 2;
     display: flex;
-    justify-content: center; /* Center profile horizontally */
+    justify-content: center; 
     align-items: center;
-    flex-direction: column; /* Added to stack additional info container at the bottom */
-    position: relative; /* Needed for relative positioning of the additional info container */
 }
 
 .profile {
     display: flex;
     align-items: center;
-    flex-direction: column; /* Center items vertically */
 }
 
 .profile img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-bottom: 20px; /* Space between image and info */
+    margin-right: 40px;
 }
 
 .profile-info {
-    text-align: center; /* Center align the text */
+    text-align: left;
 }
 
-/* Additional information container */
-.additional-info-container {
-    position: absolute;
-    bottom: 20px; /* Adjust this value to leave space from the bottom */
-    left: 0;
-    width: 100%;
-}
-
-.additional-info {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: calc(100% - 40px); /* Subtract padding */
-    margin: 0 auto; /* Center horizontally */
-}
-
-/* Video background styles */
 #video-background {
     position: fixed;
     top: 0;
@@ -77,9 +53,7 @@
     object-fit: cover;
 }
 
-/* Styles for mobile */
 @media only screen and (max-width: 768px) {
-    /* Profile styles */
     .profile-container {
         background-color: rgba(255, 255, 255, 0.8);
         padding: 60px;
@@ -92,7 +66,7 @@
 
     .profile {
         display: flex;
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
         align-items: center;
     }
 
@@ -100,7 +74,7 @@
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        margin: 0 auto 20px auto; /* Center image horizontally and add margin at the bottom */
+        margin: 0 auto 20px auto;
     }
 
     .profile-info {
