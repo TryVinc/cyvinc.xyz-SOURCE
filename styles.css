@@ -1,15 +1,3 @@
-.container {
-    max-width: 1200px;
-    padding: 20px;
-    position: relative;
-    z-index: 2;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15000vh;
-}
-
 .profile-container {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 60px;
