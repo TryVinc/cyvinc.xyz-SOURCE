@@ -10,7 +10,6 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    position: relative; /* Needed for relative positioning of the additional info container */
 }
 
 /* Profile styles for desktop */
@@ -25,6 +24,7 @@
     justify-content: center; /* Center profile horizontally */
     align-items: center;
     flex-direction: column; /* Added to stack additional info container at the bottom */
+    position: relative; /* Needed for relative positioning of the additional info container */
 }
 
 .profile {
@@ -47,8 +47,9 @@
 /* Additional information container */
 .additional-info-container {
     position: absolute;
-    bottom: 0;
-    width: 100%; /* Make it full-width */
+    bottom: 20px; /* Adjust this value to leave space from the bottom */
+    left: 0;
+    width: 100%;
 }
 
 .additional-info {
@@ -56,7 +57,8 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: 100%; /* Make it full-width */
+    width: calc(100% - 40px); /* Subtract padding */
+    margin: 0 auto; /* Center horizontally */
 }
 
 /* Video background styles */
