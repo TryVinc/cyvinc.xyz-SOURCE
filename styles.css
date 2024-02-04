@@ -1,5 +1,5 @@
-/* Default styles for desktop */
-/* Container styles */
+/*This code belongs under the name of "cyvinc.xyz"*/
+/*© 2024 nxtmove, Ltd.*/
 .container {
     max-width: 1200px;
     padding: 20px;
@@ -12,16 +12,15 @@
     height: 100vh;
 }
 
-/* Profile styles for desktop */
 .profile-container {
     background-color: rgba(255, 255, 255, 0.0);
     padding: 60px;
     border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
     position: relative;
     z-index: 2;
     display: flex;
-    justify-content: center; /* Center profile horizontally */
+    justify-content: center; 
     align-items: center;
 }
 
@@ -39,9 +38,10 @@
 
 .profile-info {
     text-align: left;
+    color: white;
+    
 }
 
-/* Video background styles */
 #video-background {
     position: fixed;
     top: 0;
@@ -57,9 +57,7 @@
     object-fit: cover;
 }
 
-/* Styles for mobile */
 @media only screen and (max-width: 768px) {
-    /* Profile styles */
     .profile-container {
         background-color: rgba(255, 255, 255, 0.8);
         padding: 60px;
@@ -72,7 +70,7 @@
 
     .profile {
         display: flex;
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column; 
         align-items: center;
     }
 
@@ -80,15 +78,14 @@
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        margin: 0 auto 20px auto; /* Center image horizontally and add margin at the bottom */
+        margin: 0 auto 20px auto; 
     }
 
     .profile-info {
         text-align: center;
+        color: white;
     }
 }
-
-/* Other CSS rules */
 
 body {
     overflow: hidden;
